@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-collie-dev-94922-authRole",
+      "UnauthRoleArn": "arn:aws:iam::864675725793:role/amplify-collie-dev-94922-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::864675725793:role/amplify-collie-dev-94922-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-collie-dev-94922-deployment",
+      "UnauthRoleName": "amplify-collie-dev-94922-unauthRole",
+      "StackName": "amplify-collie-dev-94922",
+      "StackId": "arn:aws:cloudformation:ap-south-1:864675725793:stack/amplify-collie-dev-94922/b1919a50-7c2f-11ed-93e2-0abca92d38c6",
+      "AmplifyAppId": "d1ds9tdexkuc8d"
+    },
+    "categories": {
+      "function": {
+        "colliee536bd8a": {
+          "deploymentBucketName": "amplify-collie-dev-94922-deployment",
+          "s3Key": "amplify-builds/colliee536bd8a-4f74795472596437325a-build.zip"
+        }
+      },
+      "api": {
+        "api52c63e23": {}
+      }
+    }
+  }
+}

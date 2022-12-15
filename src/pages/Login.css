@@ -1,0 +1,85 @@
+body {
+    /*background-image: url("assets/background.jpg");*/
+    /*background-color: #000000;*/
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0px;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .login-text {
+    font-size: 1.5em;
+  }
+  
+  
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2FFE9;
+    color: #F2FFE9;
+  }
+  
+  .login-box {
+    background-color: #151516;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .single-sign-on-buttons {
+  }
+  
+  hr {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .login-button-container {
+    display: flex;
+    justify-content: right;
+  }
+  
+  .login-button {
+    margin-top: 1.5rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151516;
+  }
+  
+  .header-box {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .split-screen {
+  }
+  
+  .sample-text {
+    color: #8B8A8B;
+    margin: 0 30px 40px;
+    text-align: left;
+  }
+  
+  hr {
+    border-color: #8B8A8B;
+  }
+  
+  
+  .full-height, #root {
+    /* height: 100% */
+    height: 100vh;
+  }
+  

@@ -1,0 +1,69 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-collie-dev-94922-authRole",
+      "UnauthRoleArn": "arn:aws:iam::864675725793:role/amplify-collie-dev-94922-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::864675725793:role/amplify-collie-dev-94922-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-collie-dev-94922-deployment",
+      "UnauthRoleName": "amplify-collie-dev-94922-unauthRole",
+      "StackName": "amplify-collie-dev-94922",
+      "StackId": "arn:aws:cloudformation:ap-south-1:864675725793:stack/amplify-collie-dev-94922/b1919a50-7c2f-11ed-93e2-0abca92d38c6",
+      "AmplifyAppId": "d1ds9tdexkuc8d"
+    }
+  },
+  "function": {
+    "colliee536bd8a": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2022-12-15T05:15:35.357Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-12-15T05:15:54.367Z",
+      "distZipFilename": "colliee536bd8a-4f74795472596437325a-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-collie-dev-94922-deployment",
+        "s3Key": "amplify-builds/colliee536bd8a-4f74795472596437325a-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-collie-dev-94922-deployment/amplify-cfn-templates/function/colliee536bd8a-cloudformation-template.json",
+        "logicalId": "functioncolliee536bd8a"
+      },
+      "lastPushTimeStamp": "2022-12-15T05:18:51.696Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:864675725793:function:colliee536bd8a-dev",
+        "Name": "colliee536bd8a-dev",
+        "LambdaExecutionRole": "collieLambdaRole2d96bc06-dev"
+      },
+      "lastPushDirHash": "OcFg6FGNnUIUxZSop62TagmPt6o="
+    }
+  },
+  "api": {
+    "api52c63e23": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "colliee536bd8a",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-collie-dev-94922-deployment/amplify-cfn-templates/api/api52c63e23-cloudformation-template.json",
+        "logicalId": "apiapi52c63e23"
+      },
+      "lastPushTimeStamp": "2022-12-15T05:18:51.696Z",
+      "output": {
+        "ApiName": "api52c63e23",
+        "RootUrl": "https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "ww6g8cugsl"
+      },
+      "lastPushDirHash": "56ai2E8Tk4zkDarMnXojE768tVs="
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.swal_alert__box{
+    /* height:100px !important; */
+}
+
+.sidebar  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.sidebar{
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;/* Internet Explorer 10+ */
+}
