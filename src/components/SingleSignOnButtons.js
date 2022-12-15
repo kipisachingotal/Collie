@@ -28,7 +28,7 @@ function SingleSignOnButtons(props) {
     
     var config = {
       method: 'post',
-      url: `http://localhost:8888/login`,
+      url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/login`,
       data: {
         "userName":JSON.parse(localStorage.getItem('userCreds')).username,
         "password":JSON.parse(localStorage.getItem('userCreds')).password,

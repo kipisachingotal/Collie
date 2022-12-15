@@ -230,7 +230,7 @@ const GraphSideBar = ({getUsers, getWarehouses, allNodes, getAllNodes, getDiscon
     setindependentRolesLoaded(false)
     axios({
       method: 'post',
-      url: `http://localhost:8888/independent_roles/`,
+      url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/independent_roles/`,
       data: {
         "userName":JSON.parse(localStorage.getItem('userCreds')).username,
         "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -302,7 +302,7 @@ const GraphSideBar = ({getUsers, getWarehouses, allNodes, getAllNodes, getDiscon
       dispatch(setIsLoadingTree(true));
       axios({
           method: 'post',
-          url: `http://localhost:8888/revoke_role/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/revoke_role/`,
           data: {
             "userName":JSON.parse(localStorage.getItem('userCreds')).username,
             "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -416,7 +416,7 @@ const GraphSideBar = ({getUsers, getWarehouses, allNodes, getAllNodes, getDiscon
     if(grantToType=="ROLE"){
       axios({
         method: 'post',
-        url: `http://localhost:8888/grant_role_to_role/`,
+        url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/grant_role_to_role/`,
         data: {
           "userName":JSON.parse(localStorage.getItem('userCreds')).username,
           "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -460,7 +460,7 @@ const GraphSideBar = ({getUsers, getWarehouses, allNodes, getAllNodes, getDiscon
     else{
       axios({
         method: 'post',
-        url: `http://localhost:8888/grant_role_to_user/`,
+        url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/grant_role_to_user/`,
         data: {
           "userName":JSON.parse(localStorage.getItem('userCreds')).username,
           "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -577,7 +577,7 @@ const GraphSideBar = ({getUsers, getWarehouses, allNodes, getAllNodes, getDiscon
       var users = []
        await axios({
         method: 'post',
-        url: `http://localhost:8888/return_users_of_role/`,
+        url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_users_of_role/`,
         data: { 
           "userName":JSON.parse(localStorage.getItem('userCreds')).username,
           "password":JSON.parse(localStorage.getItem('userCreds')).password,

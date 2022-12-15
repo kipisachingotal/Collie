@@ -32,7 +32,7 @@ function DropWarehouseModal({openDropWarehouse,setOpenDropWarehouse,getWarehouse
           console.log("Dropping the warehouses : ",warehouseRemoveName.map(w=>w.value))
           axios({
             method: 'post',
-            url: `http://localhost:8888/drop_warehouse/`,
+            url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/drop_warehouse/`,
             data: { 
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,

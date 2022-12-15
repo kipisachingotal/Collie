@@ -68,7 +68,7 @@ function CreateWarehouseModal({openAddWarehouse,setOpenAddWarehouse,handleCloseA
           console.log("Adding the warehouse")
           axios({
             method: 'post',
-            url: `http://localhost:8888/create_warehouse/`,
+            url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/create_warehouse/`,
             data: { 
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,

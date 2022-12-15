@@ -136,7 +136,7 @@ function GrantPrivsModal({openGrantPrivs,handleCloseGrantPrivs,setOpenGrantPrivs
       try {
         const response = await axios({
             method: 'post',
-            url: 'http://localhost:8888/return_databases/',
+            url: 'https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_databases/',
             data : {
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -169,7 +169,7 @@ function GrantPrivsModal({openGrantPrivs,handleCloseGrantPrivs,setOpenGrantPrivs
       try {
         const response = await axios({
             method: 'post',
-            url: 'http://localhost:8888/return_schemas/',
+            url: 'https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_schemas/',
             data : {
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -223,7 +223,7 @@ function GrantPrivsModal({openGrantPrivs,handleCloseGrantPrivs,setOpenGrantPrivs
         
         const response = await axios({
             method: 'post',
-            url: 'http://localhost:8888/return_schema_object_lists/',
+            url: 'https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_schema_object_lists/',
             data : {
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -328,7 +328,7 @@ function GrantPrivsModal({openGrantPrivs,handleCloseGrantPrivs,setOpenGrantPrivs
       try {
         const response = await axios({
             method: 'post',
-            url: 'http://localhost:8888/'+api+'/',
+            url: 'https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/'+api+'/',
             data : {
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -500,7 +500,7 @@ function GrantPrivsModal({openGrantPrivs,handleCloseGrantPrivs,setOpenGrantPrivs
         dispatch(setIsLoadingTree(true));
         axios({
           method: 'post',
-          url: `http://localhost:8888/grant_privs_to_role/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/grant_privs_to_role/`,
           data: { 
             "userName":JSON.parse(localStorage.getItem('userCreds')).username,
             "password":JSON.parse(localStorage.getItem('userCreds')).password,

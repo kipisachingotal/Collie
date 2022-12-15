@@ -32,7 +32,7 @@ function DropUserModal({openDropUser,handleCloseDropUser,setOpenDropUser,allUser
         dispatch(setIsLoadingTree(true));
             axios({
                 method: 'post',
-                url: `http://localhost:8888/drop_user/`,
+                url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/drop_user/`,
                 data: { 
                     "userName":JSON.parse(localStorage.getItem('userCreds')).username,
                     "password":JSON.parse(localStorage.getItem('userCreds')).password,

@@ -52,7 +52,7 @@ function ReplicatePrivsModal({openReplicatePrivs,handleCloseReplicatePrivs,setOp
         console.log(`trying to replicate privileges of ${fromUser.value} to ${toUser.map(r=>r.value)}`)
         axios({
           method: 'post',
-          url: `http://localhost:8888/replicate_priv_to_user/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/replicate_priv_to_user/`,
           data: { 
             "userName":JSON.parse(localStorage.getItem('userCreds')).username,
             "password":JSON.parse(localStorage.getItem('userCreds')).password,

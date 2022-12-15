@@ -33,7 +33,7 @@ function DropRoleModal({openDropRole, setOpenDropRole, handleCloseDropRole, allN
           dispatch(setIsLoadingTree(true));
           axios({
             method: 'post',
-            url: `http://localhost:8888/drop_role/`,
+            url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/drop_role/`,
             data: { 
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -54,7 +54,7 @@ function DropRoleModal({openDropRole, setOpenDropRole, handleCloseDropRole, allN
                 dispatch(setIsLoadingTree(true));
                 axios({
                   method: 'post',
-                  url: `http://localhost:8888/drop_role/`,
+                  url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/drop_role/`,
                   data: {
                     "userName":JSON.parse(localStorage.getItem('userCreds')).username,
                     "password":JSON.parse(localStorage.getItem('userCreds')).password,

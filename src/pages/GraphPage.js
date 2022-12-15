@@ -70,7 +70,7 @@ const GraphPage = () => {
       try{
         const response = await axios({
           method: 'post',
-          url: `http://localhost:8888/return_warehouse/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_warehouse/`,
           data: {
             "userName":JSON.parse(localStorage.getItem('userCreds')).username,
             "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -99,7 +99,7 @@ const GraphPage = () => {
       try {
         const response = await axios({
           method: 'post',
-          url: `http://localhost:8888/rbac_hirerchy/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/rbac_hirerchy/`,
           data: {
             "userName":JSON.parse(localStorage.getItem('userCreds')).username,
             "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -158,7 +158,7 @@ const GraphPage = () => {
       try {
         const response = await axios({
           method: 'post',
-          url: `http://localhost:8888/independent_roles/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/independent_roles/`,
           data: {
             "userName":JSON.parse(localStorage.getItem('userCreds')).username,
             "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -217,7 +217,7 @@ const GraphPage = () => {
       try{
         const response_nodes = await axios({
           method: 'post',
-          url: `http://localhost:8888/return_roles/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_roles/`,
           data: {
             "userName":JSON.parse(localStorage.getItem('userCreds')).username,
             "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -253,7 +253,7 @@ const GraphPage = () => {
                   "password":JSON.parse(localStorage.getItem('userCreds')).password,
                   "account":JSON.parse(localStorage.getItem('userCreds')).account
                 },
-                url: `http://localhost:8888/return_users/`
+                url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_users/`
             })
             if (response.data["flag"] == 1) {
               console.log(response.data["response"])

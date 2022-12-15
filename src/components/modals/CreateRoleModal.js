@@ -56,7 +56,7 @@ function CreateRoleModal({handleCloseAddRole,openAddRole,setOpenAddRole,getDisco
       try {
           const response = await axios({
               method: 'post',
-              url: `http://localhost:8888/return_tag_values/`,
+              url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_tag_values/`,
               data : {
                 "userName":JSON.parse(localStorage.getItem('userCreds')).username,
                 "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -140,7 +140,7 @@ function CreateRoleModal({handleCloseAddRole,openAddRole,setOpenAddRole,getDisco
         }
         axios({
           method: 'post',
-          url: `http://localhost:8888/create_role/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/create_role/`,
           data: payload,
           headers: {
             // 'Authorization': `bearer ${token}`,

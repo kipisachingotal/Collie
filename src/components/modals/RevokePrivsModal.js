@@ -133,7 +133,7 @@ function RevokePrivsModal({openRevokePrivs,handleCloseRevokePrivs,setOpenRevokeP
       try {
         const response = await axios({
             method: 'post',
-            url: 'http://localhost:8888/return_databases/',
+            url: 'https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_databases/',
             data : {
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -166,7 +166,7 @@ function RevokePrivsModal({openRevokePrivs,handleCloseRevokePrivs,setOpenRevokeP
       try {
         const response = await axios({
             method: 'post',
-            url: 'http://localhost:8888/return_schemas/',
+            url: 'https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_schemas/',
             data : {
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -220,7 +220,7 @@ function RevokePrivsModal({openRevokePrivs,handleCloseRevokePrivs,setOpenRevokeP
         
         const response = await axios({
             method: 'post',
-            url: 'http://localhost:8888/return_schema_object_lists/',
+            url: 'https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/return_schema_object_lists/',
             data : {
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -326,7 +326,7 @@ function RevokePrivsModal({openRevokePrivs,handleCloseRevokePrivs,setOpenRevokeP
       try {
         const response = await axios({
             method: 'post',
-            url: 'http://localhost:8888/'+api+'/',
+            url: 'https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/'+api+'/',
             data : {
               "userName":JSON.parse(localStorage.getItem('userCreds')).username,
               "password":JSON.parse(localStorage.getItem('userCreds')).password,
@@ -497,7 +497,7 @@ function RevokePrivsModal({openRevokePrivs,handleCloseRevokePrivs,setOpenRevokeP
         dispatch(setIsLoadingTree(true));
         axios({
           method: 'post',
-          url: `http://localhost:8888/revoke_privs_from_role/`,
+          url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/revoke_privs_from_role/`,
           data: {
             "userName":JSON.parse(localStorage.getItem('userCreds')).username,
             "password":JSON.parse(localStorage.getItem('userCreds')).password,

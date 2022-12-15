@@ -53,11 +53,11 @@ function Login(props) {
       setDisableLogin(true)
       axios({
         method: 'post',
-        url: `http://localhost:8888/login`,
+        url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/login`,
         data: { 
           "userName":username,
           "password":password,
-          "account":"dummmy.us-east1.aws",
+          "account":"jm48581.ap-south-1.aws",
         },
         headers: {
           'Content-Type': 'application/json'

@@ -33,7 +33,7 @@ function CreateUserModal({openAddUser,setOpenAddUser,handleCloseAddUser,getUsers
             console.log("Adding the user")
             axios({
                 method: 'post',
-                url: `http://localhost:8888/create_user/`,
+                url: `https://ww6g8cugsl.execute-api.ap-south-1.amazonaws.com/dev/create_user/`,
                 data: { 
                     "userName":JSON.parse(localStorage.getItem('userCreds')).username,
                     "password":JSON.parse(localStorage.getItem('userCreds')).password,
